@@ -1,0 +1,355 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500&family=Roboto:ital,wght@1,300;1,400&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Common Styles */
+.primary-btn {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 13px 20px;
+  background-color: #ff900e;
+  border: 0;
+  border-radius: 7%;
+  font-weight: 600;
+  font-size: 18px;
+}
+.primary-btn:hover {
+  color: #ff900e;
+  background-color: #362444;
+  transition: 0.5s;
+}
+
+/* Header and Banner styles */
+/* .header {
+  height: 1160px;
+  width: 100%;
+  background-color: #ff900e1a;
+} */
+.architechts-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 8%;
+}
+.architechts-nav .nav-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.architechts-nav a {
+  text-decoration: none;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 7px 13px;
+}
+.nav-link ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+}
+.nav-link ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #ffae00;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after {
+  width: 100%;
+}
+
+/* Banner TextBox and Thumbnail Styles*/
+.banner-textbox {
+  width: 50%;
+  margin: 4% auto;
+  text-align: center;
+}
+.banner-textbox .banner-title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #131313;
+}
+.banner-textbox .banner-description {
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+  padding-bottom: 35px;
+}
+.banner-thumbnail {
+  width: 1300px;
+  height: 700px;
+  margin: 0 auto;
+}
+.banner-thumbnail img {
+  width: 100%;
+}
+
+/* Team section Style */
+.team-section {
+  width: 1200px;
+  margin: 40px auto;
+}
+.team-container {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+.team-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.team-textbox .first-span {
+  font-weight: 500;
+  font-size: 45px;
+  color: #727272;
+}
+.team-textbox .secound-span {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.team-textbox .third-span {
+  font-weight: 700;
+  font-size: 45px;
+  color: #ff900e;
+}
+.team-textbox .team-description {
+  color: #727272;
+  margin-top: 25px;
+  padding-bottom: 35px;
+}
+
+/* Experiment Styles */
+.experiment-secton {
+  width: 1250px;
+  margin: 90px auto;
+}
+.experiment-container {
+  display: flex;
+  align-items: center;
+  column-gap: 65px;
+}
+.experiment-textbox .experiment-title {
+  font-weight: 700;
+  font-size: 35px;
+  color: #131313;
+  padding-left: 18px;
+  position: relative;
+}
+
+.experiment-title::before {
+  content: '';
+  background: #f69800;
+  width: 4px;
+  height: 90px;
+  position: absolute;
+  left: 1.5px;
+}
+
+.experiment-textbox .experiment-sub-title {
+  color: #727272;
+  padding-top: 35px;
+  margin-bottom: 32px;
+}
+
+.experiment-tools {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px #0000000f;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
+  text-align: left;
+}
+.experiment-tools h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.experiment-tools p {
+  color: #727272;
+  padding-bottom: 25px;
+}
+.experiment-thumbnail img {
+  width: 678px;
+  height: 850px;
+}
+.experiment-thumbnail .experience-btn {
+  padding: 40px;
+}
+.big-btn span {
+  font-size: 30px;
+}
+
+.big-btn {
+  position: relative;
+  bottom: 80px;
+  right: 40px;
+  padding: 5% 40px;
+  background: #ff900e;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+/* ----------------------
+Extra Section Style
+Services section style
+------------------------- */
+.servics-section {
+  width: 1250px;
+  margin: 70px auto;
+}
+.servics-section .services-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  margin-top: 70px;
+}
+.services-item {
+  text-align: center;
+  padding: 35px 10px;
+  box-shadow: 0px 1px 1px 1px #8a8a8a;
+}
+.services-item:hover {
+  background-color: #f4cc01;
+  transition: background-color 1s;
+}
+.services-item h3 {
+  padding: 20px 0;
+}
+.services-item p {
+  padding-bottom: 10px;
+}
+.item-btn {
+  padding: 5px 10px;
+  border: 0;
+  margin: 10px 0;
+  color: white;
+  background-color: #383eb0;
+}
+.item-btn:hover {
+  background-color: #12072d;
+  transition: background-color 0.5s;
+}
+
+/* Facts Styles */
+.fact-container {
+  width: 1250px;
+  margin: 70px auto;
+}
+.fact-container h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  padding-bottom: 25px;
+}
+.fact-container p {
+  color: #727272;
+}
+
+/* Achivement section styles */
+.achive-section {
+  width: 1100px;
+  margin: 40px auto;
+}
+.achive-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 70px;
+}
+.achive-item {
+  text-align: center;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 40px 30px;
+}
+.achive-item h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/* Sponsors styles */
+.sponsor-section {
+  width: 1250px;
+  margin: 100px auto;
+}
+.sponsor-section .sponsor-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.sponsor-section .sponsor-sub-title {
+  text-align: center;
+  padding-top: 20px;
+  color: #727272;
+}
+
+.sponsor-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 40px;
+  filter: grayscale(100%);
+}
+
+/* Footer styles */
+.footer-section {
+  width: 1250px;
+  margin: 50px auto;
+  background-color: #fff4e7;
+  border-radius: 8px;
+  padding: 50px 0;
+}
+.footer-section h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #424242;
+}
+
+/******************
+Media Queries
+********************/
+
+@media screen and (max-width: 576px) {
+  .services-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+}
+
+
+
+
+
+.architechts-nav, .banner-container, .team-section, .experiment-secton, .fact-container, .achive-section, .sponsor-section, .footer-section .header{
+  display: none;
+}
+
+
