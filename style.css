@@ -343,30 +343,9 @@ Media Queries
 ********************/
 
 @media screen and (max-width: 576px) {
-  .header {
-    height: 860px;
-    max-width: 100%;
-    background-color: #2e02ce1a;
-  } 
-  .banner-textbox .banner-title {
-    font-weight: 700;
-    font-size: 34px;
-    color: #121111;
-  }
-  .banner-textbox .banner-description {
-    color: #727272;
-    font-weight: 400;
-    font-size: 13px;
-    margin-top: 20px;
-    padding-bottom: 35px;
-  }
-  .banner-thumbnail {
-    width: 700px;
-    margin: 0 auto;
-  }
-  .banner-thumbnail img {
-    width: 100%;
-  } 
+ .header{
+  display: none;
+ }
   .team-photos{
     grid-template-columns: 1fr;
     row-gap: 30px;
@@ -418,33 +397,3 @@ Media Queries
     justify-items: center;
   }
 }
-
-/* section{
-  display: none;
-} */
-
-/* .banner-textbox {
-  width: 50%;
-  margin: 4% auto;
-  text-align: center;
-}
-.banner-textbox .banner-title {
-  font-weight: 700;
-  font-size: 64px;
-  color: #131313;
-}
-.banner-textbox .banner-description {
-  color: #727272;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 20px;
-  padding-bottom: 35px;
-}
-.banner-thumbnail {
-  width: 1300px;
-  height: 700px;
-  margin: 0 auto;
-}
-.banner-thumbnail img {
-  width: 100%;
-} */
