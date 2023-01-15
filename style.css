@@ -22,14 +22,14 @@
   color: #ff900e;
   background-color: #362444;
   transition: 0.5s;
-}
 
+}
 /* Header and Banner styles */
-/* .header {
+.header {
   height: 1160px;
-  width: 100%;
+  max-width: 100%;
   background-color: #ff900e1a;
-} */
+} 
 .architechts-nav {
   display: flex;
   justify-content: space-between;
@@ -151,10 +151,10 @@
 }
 
 .experiment-title::before {
-  content: '';
+  content: "";
   background: #f69800;
   width: 4px;
-  height: 90px;
+  height: 85px;
   position: absolute;
   left: 1.5px;
 }
@@ -232,11 +232,12 @@ Services section style
 .services-item {
   text-align: center;
   padding: 35px 10px;
-  box-shadow: 0px 1px 1px 1px #8a8a8a;
+  box-shadow: 1px 5.34229px 13.3557px rgb(41 39 39 / 7%);
 }
 .services-item:hover {
   background-color: #f4cc01;
   transition: background-color 1s;
+  color: #fff;
 }
 .services-item h3 {
   padding: 20px 0;
@@ -291,6 +292,11 @@ Services section style
   padding-top: 10px;
   padding-bottom: 5px;
 }
+.achive-item:hover{
+  background-color: #703ba8;
+  transition: 0.7s;
+  color: #fff;
+}
 
 /* Sponsors styles */
 .sponsor-section {
@@ -319,7 +325,8 @@ Services section style
 /* Footer styles */
 .footer-section {
   width: 1250px;
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
   background-color: #fff4e7;
   border-radius: 8px;
   padding: 50px 0;
@@ -336,20 +343,108 @@ Media Queries
 ********************/
 
 @media screen and (max-width: 576px) {
-  .services-container{
+  .header {
+    height: 860px;
+    max-width: 100%;
+    background-color: #2e02ce1a;
+  } 
+  .banner-textbox .banner-title {
+    font-weight: 700;
+    font-size: 34px;
+    color: #121111;
+  }
+  .banner-textbox .banner-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 20px;
+    padding-bottom: 35px;
+  }
+  .banner-thumbnail {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .banner-thumbnail img {
+    width: 100%;
+  } 
+  .team-photos{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .team-container{
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .team-textbox{
+    text-align: center;
+  }
+  .experiment-container {
+    flex-direction: column;
+    row-gap: 35px;
+  }
+
+  .experiment-textbox {
+    width: 80%;
+  }
+  .big-btn {
+    right: 50%;
+    top: 5px;
+  }
+
+  .services-container {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 30px;
     row-gap: 20px;
+    justify-items: center;
+  }
+  .services-item {
+    width: 50%;
+  }
+  .fact-container {
+    text-align: center;
+  }
+  .achive-container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+  }
+  .achive-item {
+    width: 55%;
+    margin-left: 15%;
+  }
+
+  .sponsor-container {
+    justify-items: center;
   }
 }
 
-
-
-
-
-.architechts-nav, .banner-container, .team-section, .experiment-secton, .fact-container, .achive-section, .sponsor-section, .footer-section .header{
+/* section{
   display: none;
+} */
+
+/* .banner-textbox {
+  width: 50%;
+  margin: 4% auto;
+  text-align: center;
 }
-
-
+.banner-textbox .banner-title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #131313;
+}
+.banner-textbox .banner-description {
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+  padding-bottom: 35px;
+}
+.banner-thumbnail {
+  width: 1300px;
+  height: 700px;
+  margin: 0 auto;
+}
+.banner-thumbnail img {
+  width: 100%;
+} */
